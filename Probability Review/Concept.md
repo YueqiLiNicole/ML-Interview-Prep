@@ -11,7 +11,7 @@
 - **Definition**: The sample space $ \Omega $ is the set of all possible outcomes of an experiment.
 - **Observations**: Points in the sample space, also known as sample outcomes or realizations.
 - **Events**: Subsets of the sample space.
-- **Example**: For a double coin flip, the sample space $ \Omega = \{HH, HT, TH, TT\} $.
+- **Example**: For a double coin flip, the sample space $\Omega = \{HH, HT, TH, TT\}$.
 
 ## Probability Axioms
 1. $ P(E) \geq 0 $ for every event E.
