@@ -14,7 +14,7 @@ The probability of an event $E$ in a sample space $\Omega$ follows these axioms:
 1. $P(E) \geq 0$ for every event $E$.
 2. $P(\Omega) = 1$.
 3. For disjoint events $E_1, E_2, \ldots$, the probability of their union is the sum of their probabilities:
-   $P\left(\bigcup_{i=1}^\infty E_i\right) = \sum_{i=1}^\infty P(E_i)$
+   $$P\left(\bigcup_{i=1}^\infty E_i\right) = \sum_{i=1}^\infty P(E_i)$$
 
 ### Joint and Conditional Probabilities
 - **Joint Probability**: $P(A, B)$ denotes the probability of both $A$ and $B$ occurring.
@@ -23,4 +23,4 @@ The probability of an event $E$ in a sample space $\Omega$ follows these axioms:
 
 ### Conditional Independence
 Events $A$ and $B$ are conditionally independent given $C$ if:
-$P(A, B \mid C) = P(A \mid C)P(B \mid C)$
+$$P(A, B \mid C) = P(A \mid C)P(B \mid C)$$
