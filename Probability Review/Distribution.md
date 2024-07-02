@@ -8,7 +8,7 @@ A **distribution** describes how probabilities are assigned across the possible 
 - **Probability Density Function (PDF)**: For a continuous random variable $X$, the PDF, $f(x)$, is such that the probability that $X$ is in an interval $[a, b]$ is given by the integral of $f(x)$ from $a$ to $b$. 
 - **Properties of PDF**
 1. **Non-negativity**: The PDF must be non-negative for all values of $x$:
-  $$f(x) \geq 0 \text{ for all } x$$
+  $$f(x) \geq 0 \forall x$$
 
 2. **Normalization**: The total area under the PDF across the entire range of $X$ must equal 1, ensuring that the probability of all possible outcomes sums to 100%:
 
@@ -41,28 +41,28 @@ The **marginal distribution** of one or more variables within a joint distributi
 
 ### 2. **Poisson Distribution**
 - **Description**: This distribution models the number of events occurring in a fixed interval of time or space, given the average number of times the event occurs over that interval. It is described by a single parameter λ (the event rate).
-- **PMF**: $P(X = k) = \frac{\lambda^k e^{-\lambda}}{k!}$
+- **PMF**: $$P(X = k) = \frac{\lambda^k e^{-\lambda}}{k!}$$
 - **Applications**: Commonly used in scenarios like modeling the number of phone calls received by a call center, the arrival of customers at a store, or the occurrence of earthquakes in a region.
   
 ### 3. **Normal (Gaussian) Distribution**
-- **Description**: The Normal distribution is perhaps the most famous distribution in statistics, often referred to as the bell curve due to its shape. It is defined by two parameters: the mean $\miu$ and the standard deviation $\sigma$, which set the center and the spread of the distribution, respectively.
+- **Description**: The Normal distribution is perhaps the most famous distribution in statistics, often referred to as the bell curve due to its shape. It is defined by two parameters: the mean $\mu$ and the standard deviation $\sigma$, which set the center and the spread of the distribution, respectively.
 - **PDF**: $$f(x) = \frac{1}{\sqrt{2\pi \sigma^2}} e^{-\frac{(x-\mu)^2}{2\sigma^2}}$$
 - **Applications**: Due to the Central Limit Theorem, which states that the sum of many independent random variables tends toward a normal distribution, this distribution is extremely common in natural and social sciences for dealing with errors, heights, blood pressure measurements, and much more.
 
 ### 4. **Exponential Distribution**
 - **Description**: The Exponential distribution is used to model the time between events in a process where events occur continuously and independently at a constant average rate. It is characterized by the rate parameter $\lambda$.
-- **PDF**: $$f(x) = \lambda e^{-\lambda x} \) for \( x \geq 0$$
+- **PDF**: $$f(x) = \lambda e^{-\lambda x} \ for \ x \geq 0$$
 - **Applications**: Widely used in survival analysis, queuing theory, and reliability engineering to model the expected time for an event to happen, such as the lifespan of a machine or the time until a radioactive particle decays.
 
 
 ### 5. **Uniform Distribution**
 - **Description**: In a uniform distribution, all intervals of equal length in the distribution's support have an equal probability of occurring. It can be either discrete or continuous.
-- **PDF (Continuous)**: $$f(x) = \frac{1}{b-a} \) for \( x \in [a, b]$$
+- **PDF (Continuous)**: $$f(x) = \frac{1}{b-a} \ for \ x \in [a, b]$$
 - **Applications**: Used for simulation and modeling equal probability scenarios, such as drawing a card from a deck or picking a random number from a set.
 
 ### 6. **Gamma Distribution**
 - **Description**: The Gamma distribution generalizes the Exponential distribution, describing the time until \( k \) events occur in a process with a constant rate of occurrence. It is defined by a shape parameter $k$ and a rate parameter $\theta$.
-- **PDF**: $$(x) = \frac{x^{k-1} e^{-x/\theta}}{\theta^k \Gamma(k)} \) for \( x \geq 0$$
+- **PDF**: $$(x) = \frac{x^{k-1} e^{-x/\theta}}{\theta^k \Gamma(k)} \ for \ x \geq 0$$
 - **Applications**: Used in financial modeling for stock returns, in insurance for claim size distributions, and in project management for modeling task completion times.
 
 Each of these distributions is chosen based on the nature of the variables involved and the specific requirements of the study or experiment being conducted. Understanding the properties and applications of each distribution is crucial for making informed decisions about how to model data and interpret results.
