@@ -1,6 +1,6 @@
-## Basic Concepts
+# Basic Concepts
 
-### Sample Space
+## Sample Space
 - **Definition**: The sample space, denoted as $\Omega$, includes all possible outcomes of a probabilistic experiment.
 - **Observations**: Individual outcomes within $\Omega$, known as realizations or elements.
 - **Events**: Subsets of the sample space which may contain one or more outcomes.
@@ -9,7 +9,7 @@
   - **Sample Space**: $\Omega = \{HH, HT, TH, TT\}$ where H and T represent heads and tails, respectively.
   - **Event Example**: The event of both flips resulting in the same outcome: $E = \{HH, TT\}$.
 
-### Random Variable
+## Random Variable
 - **Definition:** A random variable is a function that assigns a real number to each outcome in a sample space of a random process. This mapping from the abstract outcome of a process (like flipping a coin or rolling a dice) to a numerical value allows for more straightforward mathematical treatment.
 - **Types of Random Variables**
 
@@ -29,23 +29,23 @@ Suppose $X$ is a random variable representing the result of rolling a six-sided 
 
 Random variables provide a formal mechanism to study and analyze outcomes quantitatively in the context of probability and statistics.
 
-### Probability Axioms
+## Probability Axioms
 The probability of an event $E$ in a sample space $\Omega$ follows these axioms:
 1. $P(E) \geq 0$ for every event $E$.
 2. $P(\Omega) = 1$.
 3. For disjoint events $E_1, E_2, \ldots$, the probability of their union is the sum of their probabilities:
    $$P\left(\bigcup_{i=1}^\infty E_i\right) = \sum_{i=1}^\infty P(E_i)$$
 
-### Joint and Conditional Probabilities
+## Joint and Conditional Probabilities
 - **Joint Probability**: $P(A, B)$ denotes the probability of both $A$ and $B$ occurring.
 - **Conditional Probability**: $P(A \mid B)$ is the probability of $A$ given that $B$ has occurred.
 - **Formula**: $P(A, B) = P(A \mid B)P(B) = P(B \mid A)P(A)$.
 
-### Conditional Independence
+## Conditional Independence
 Events $A$ and $B$ are conditionally independent given $C$ if:
 $$P(A, B \mid C) = P(A \mid C)P(B \mid C)$$
 
-### Chain Rule (or General Multiplication Rule)
+## Chain Rule
 
 - **Definition:** provides a way to break down the probability of a sequence of interdependent events. It is a direct extension of the basic rule of probability that states the probability of the intersection of two events is the product of the probability of one event and the conditional probability of the other event, given the first.
 
@@ -56,11 +56,11 @@ $$P(X_1, X_2, \ldots, X_n) = P(X_1) \times P(X_2 | X_1) \times P(X_3 | X_1, X_2)
 
 This formula shows how to decompose the probability of a complex event involving multiple variables into simpler, conditional probabilities.
 
-### Bayes' Rule
+## Bayes' Rule
 
 - **Definition:** Bayes' Rule is a fundamental theorem in probability theory that describes how to update the probability of a hypothesis based on new evidence. It is extensively used in statistics, machine learning, and data analysis to update beliefs or predictions in light of new data.
 
-#### Mathematical Expression
+### Mathematical Expression
 Bayes' Rule can be stated as:
 
 $$P(A | B) = \frac{P(B | A) \times P(A)}{P(B)}$$
@@ -71,7 +71,7 @@ where:
 - $P(A)$ is the probability of $A$ (prior probability).
 - $P(B)$ is the probability of $B$ (marginal probability).
 
-#### Calculation of Marginal Probability $P(B)$
+### Calculation of Marginal Probability $P(B)$
 The denominator $P(B$ can be challenging to calculate directly in many cases, especially when $B$ depends on several factors. It is often computed using the Law of Total Probability:
 
 $$P(B) = \sum_{i} P(B | A_i) P(A_i)$$
