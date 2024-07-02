@@ -14,27 +14,27 @@
 - **Example**: For a double coin flip, the sample space $\Omega = \{HH, HT, TH, TT\}$.
 
 ## Probability Axioms
-1. $ P(E) \geq 0 $ for every event E.
-2. $ P(\Omega) = 1 $.
+1. $P(E) \geq 0$ for every event E.
+2. $P(\Omega) = 1$.
 3. For disjoint events $ E_1, E_2, \ldots $:
-   $$ P\left(\bigcup_{i=1}^\infty E_i\right) = \sum_{i=1}^\infty P(E_i) $$
+   $$P\left(\bigcup_{i=1}^\infty E_i\right) = \sum_{i=1}^\infty P(E_i)$$
 
 ## Joint and Conditional Probabilities
-- **Joint Probability**: $ P(A, B) $ denotes the probability of both A and B occurring.
-- **Conditional Probability**: $ P(A \mid B) $ is the probability of A given that B has occurred.
-- Formula: $ P(A, B) = P(A \mid B)P(B) = P(B \mid A)P(A) $
+- **Joint Probability**: $P(A, B)$ denotes the probability of both A and B occurring.
+- **Conditional Probability**: $P(A \mid B)$ is the probability of A given that B has occurred.
+- Formula: $P(A, B) = P(A \mid B)P(B) = P(B \mid A)P(A)$
 
 ## Conditional Independence
 - Events A and B are conditionally independent given C if:
-  $$ P(A, B \mid C) = P(A \mid C)P(B \mid C) $$
+  $$P(A, B \mid C) = P(A \mid C)P(B \mid C)$$
 
 ## Marginalization and Total Probability
 - **Marginalization**:
-  $$ P(X) = \sum_Y P(X, Y) = \sum_Y P(X \mid Y)P(Y) $$
+  $$P(X) = \sum_Y P(X, Y) = \sum_Y P(X \mid Y)P(Y)$$
 - **Total Probability** provides a way to calculate the probability of X via its relationship with Y.
 
 ## Bayes' Rule
-$$[ P(A \mid B) = \frac{P(B \mid A)P(A)}{P(B)} ]$$
+$$P(A \mid B) = \frac{P(B \mid A)P(A)}{P(B)}$$
 
 ## Random Variables
 - **Discrete**: Takes countable values, probability defined by a probability mass function (PMF).
